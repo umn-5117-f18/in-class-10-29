@@ -3,10 +3,22 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <Auth style="margin-left: 20px;"/>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import Auth from "@/components/Auth.vue";
+
+export default {
+  name: "App",
+  components: {
+    Auth
+  }
+};
+</script>
 
 <style>
 #app {
