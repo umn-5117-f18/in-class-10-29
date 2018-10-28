@@ -1,6 +1,11 @@
 import Vue from 'vue'
+import VueFire from "vuefire";
+
 import App from './App.vue'
 import router from './router'
+import "./firebaseConfig";
+
+Vue.use(VueFire);
 
 Vue.config.productionTip = false
 
