@@ -2,13 +2,14 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
+// https://cli.vuejs.org/guide/mode-and-env.html
 const config = {
-  apiKey: "AIzaSyBF5GiSgF0XhBgg_K58SWQ-wWOJ752hURM",
-  authDomain: "test01-5117.firebaseapp.com",
-  databaseURL: "https://test01-5117.firebaseio.com",
-  projectId: "test01-5117",
-  storageBucket: "test01-5117.appspot.com",
-  messagingSenderId: "231246872795"
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  databaseURL: process.env.VUE_APP_DB_URL,
+  projectId: process.env.VUE_APP_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_MSG_SENDER_ID
 };
 firebase.initializeApp(config);
 
