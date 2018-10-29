@@ -12,7 +12,7 @@
 * `npm install`
     * (on osx, I had to use `npm install --force firebase`; see class notes for 10-29)
 * create project at <https://console.firebase.google.com>
-* firebase settings
+* add firebase settings to .env file
     * click "Add Firebase to your web app" to find your config
     * put your settings in `.env` (alternatively, put your settings in `.env.local`, which will not be tracked by git)
 * `firebase init`
